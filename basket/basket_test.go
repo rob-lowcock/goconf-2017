@@ -29,7 +29,7 @@ var _ = Describe("Basket", func() {
 				Title: "Banana",
 				Price: 20,
 			},
-		}, []int{})
+		})
 
 		Expect(output).To(Equal(200))
 	})
@@ -47,7 +47,7 @@ var _ = Describe("Basket", func() {
 				Price:    100,
 				SubPrice: 50,
 			},
-		}, []int{})
+		})
 
 		Expect(output).To(Equal(150))
 	})
@@ -65,27 +65,9 @@ var _ = Describe("Basket", func() {
 				Price:    50,
 				SubPrice: 100,
 			},
-		}, []int{})
+		})
 
 		Expect(output).To(Equal(150))
-	})
-
-	It("ignores products that are on offer", func() {
-		output := basket.GetTotal([]basket.Item{
-			{
-				Sku:   2,
-				Title: "Bread",
-				Price: 100,
-			},
-			{
-				Sku:      1,
-				Title:    "Milk",
-				Price:    50,
-				SubPrice: 100,
-			},
-		}, []int{1})
-
-		Expect(output).To(Equal(200))
 	})
 
 	It("can cope with a combination of scenarios in a single basket", func() {
@@ -113,8 +95,8 @@ var _ = Describe("Basket", func() {
 				Price:    20,
 				SubPrice: 30,
 			},
-		}, []int{1})
+		})
 
-		Expect(output).To(Equal(295))
+		Expect(output).To(Equal(245))
 	})
 })

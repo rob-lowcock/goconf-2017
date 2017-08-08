@@ -8,6 +8,6 @@ type Item struct {
 	SubPrice    int
 }
 
-func GetTotal(items []Item, offers []int) int {
+func GetTotal(items []Item) int {
 	return 0
 }
