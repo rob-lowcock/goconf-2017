@@ -42,10 +42,11 @@ var _ = Describe("Basket", func() {
 				Price: 100,
 			},
 			{
-				Sku:      2,
-				Title:    "Bread",
-				Price:    100,
-				SubPrice: 50,
+				Sku:         2,
+				Title:       "Bread",
+				Price:       100,
+				SubPrice:    50,
+				Substituted: true,
 			},
 		})
 
@@ -60,10 +61,11 @@ var _ = Describe("Basket", func() {
 				Price: 100,
 			},
 			{
-				Sku:      1,
-				Title:    "Milk",
-				Price:    50,
-				SubPrice: 100,
+				Sku:         1,
+				Title:       "Milk",
+				Price:       50,
+				SubPrice:    100,
+				Substituted: true,
 			},
 		})
 
@@ -78,22 +80,25 @@ var _ = Describe("Basket", func() {
 				Price: 100,
 			},
 			{
-				Sku:      1,
-				Title:    "Milk",
-				Price:    50,
-				SubPrice: 100,
+				Sku:         1,
+				Title:       "Milk",
+				Price:       50,
+				SubPrice:    100,
+				Substituted: true,
 			},
 			{
-				Sku:      5,
-				Title:    "Chocolate",
-				Price:    150,
-				SubPrice: 75,
+				Sku:         5,
+				Title:       "Chocolate",
+				Price:       150,
+				SubPrice:    75,
+				Substituted: true,
 			},
 			{
-				Sku:      3,
-				Title:    "Banana",
-				Price:    20,
-				SubPrice: 30,
+				Sku:         3,
+				Title:       "Banana",
+				Price:       20,
+				SubPrice:    30,
+				Substituted: true,
 			},
 		})
 
